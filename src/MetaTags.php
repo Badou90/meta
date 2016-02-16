@@ -12,7 +12,7 @@ class MetaTags
         $title = ($this->title)?$this->title:config('metatags.title.default');
 
         if($this->title)
-            $title = config('metatags.title.prepend').$title.config('metatags.title.append');
+            $title = config('metatags.title.prepend').config('metatags.title.separator').$title.config('metatags.title.separator').config('metatags.title.append');
 
         return "<title>{$title}</title>";
     }
