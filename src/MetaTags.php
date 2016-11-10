@@ -7,11 +7,11 @@ class MetaTags
 
     public function set($name, $value)
     {
-        $this->$tags[$name] = $value;
+        $this->tags[$name] = $value;
     }
 
     public function tag($name)
     {
-        return $this->tags[$name] ? $this->tags[$name] : config("metatags.$name");
+        return !empty($this->tags[$name]) ? $this->tags[$name] : config("metatags.$name");
     }
 }
