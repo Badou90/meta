@@ -1,32 +1,19 @@
 <?php
 
 return [
-    /**
-     * Config for title meta field
-     * 'prepend' - text before title
-     * 'append' - text after title
-     * 'separator' - separator between page title, prepend and append
-     */
-    'title' => [
-        'prepend' => '',
-        'append' => '',
-        'separator' => '',
-        'default' => '',
-    ],
 
     /**
-     *
+     * Config for default title meta field
      */
-    'description' => [
-        'template' => '',
-        'default' => '',
-    ],
+    'title' => '',
 
     /**
-     *
+     * Config for default description field
      */
-    'keywords' => [
-        'template' => '',
-        'default' => '',
-    ],
+    'description' => '',
+
+    /**
+     * Config for default keywords field
+     */
+    'keywords' => '',
 ];

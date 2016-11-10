@@ -12,6 +12,6 @@ class MetaTags
 
     public function tag($name)
     {
-        return $this->tags[$name] ? $this->tags[$name] : config("meta.$name");
+        return $this->tags[$name] ? $this->tags[$name] : config("metatags.$name");
     }
 }
